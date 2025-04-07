@@ -77,7 +77,7 @@ public class Food {
 
     @Override
     public String toString(){
-        return "This is a food of " + type + " type. It has " + feedValue + " feed value.";
+        return type + " food info: This is a food of " + type + " type. It has " + feedValue + " feed value.";
     }
 
 }
