@@ -6,6 +6,8 @@ public class Peepy {
     private int age;
     private Color color;
 
+//constructors
+
     /**
      * Default cotructor for peepy.
      */
@@ -14,7 +16,6 @@ public class Peepy {
         age = -1;
         color = Color.WHITE;
     }
-
 
     /**
      * Value contructor for peepy that sets only the name.
@@ -50,7 +51,40 @@ public class Peepy {
     }
 
 
+//methods
 
+    //getter methods
+
+    /**
+     * Returns the name of the peepy.
+     * @return String name of the peepy.
+     */
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * Returns the age of the peepy.
+     * @return int age of the peepy
+     */
+    public int getAge(){
+        return age;
+    }
+
+    /**
+     * Returns the color of the peepy.
+     * @return Color color of the peepy.
+     */
+    public Color getColor(){
+        return color;
+    }
+
+
+
+
+
+
+    //setter methods
 
     /**
      * Sets the name of the peepy.
@@ -68,7 +102,13 @@ public class Peepy {
         this.age = age;
     }
 
-
+    /**
+     * Sets the color of the peepy.
+     * @param color What to change the color of the peepy to.
+     */
+    public void setColor(Color color){
+        this.color = color;
+    }
 
 
 
