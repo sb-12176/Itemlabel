@@ -7,6 +7,7 @@ public class Peepy {
     private Color color;
 
     private int full;
+    private final int FULLFULL = 100;
 
 //constructors
 
@@ -129,6 +130,15 @@ public class Peepy {
      */
     public void feed(){
         full += 5;
+    }
+
+    /**
+     * Feeds the peepy a specific food, increasing his fullness by
+     * the full value of the food.
+     * @param food The food that you are feeding the peepy.
+     */
+    public void feed(Food food){
+        full += food.getFeedValue();
     }
 
 

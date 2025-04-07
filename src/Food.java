@@ -71,4 +71,13 @@ public class Food {
         this.feedValue = feedValue;
     }
 
+
+
+
+
+    @Override
+    public String toString(){
+        return "This is a food of " + type + " type. It has ";
+    }
+
 }
