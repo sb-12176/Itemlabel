@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Random;
 
 public class Peepy {
 
@@ -8,6 +9,8 @@ public class Peepy {
 
     private int full;
     private final int FULLFULL = 100;
+
+    private Random rand;
 
 //constructors
 
@@ -145,7 +148,7 @@ public class Peepy {
 
     @Override
     public String toString(){
-        return ("Hello I am peepy named " + name + ". I am " + age + " years old and color " + color.toString());
+        return ("Hello I am peepy named " + name + ". \nI am " + age + " years old. \nI am color " + color);
     }
 
 }
