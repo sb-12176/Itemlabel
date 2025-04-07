@@ -6,6 +6,8 @@ public class Peepy {
     private int age;
     private Color color;
 
+    private int full;
+
 //constructors
 
     /**
@@ -25,6 +27,8 @@ public class Peepy {
         this.name = name;
         age = -1;
         color = Color.WHITE;
+
+        full = 0;
     }
 
     /**
@@ -36,6 +40,8 @@ public class Peepy {
         this.name = name;
         this.age = age;
         color = Color.WHITE;
+
+        full = 0;
     }
 
     /**
@@ -48,6 +54,8 @@ public class Peepy {
         this.name = name;
         this.age = age;
         this.color = color;
+
+        full = 0;
     }
 
 
@@ -79,9 +87,13 @@ public class Peepy {
         return color;
     }
 
-
-
-
+    /**
+     * Returns the fullness of the peepy.
+     * @return int full
+     */
+    public int getFull(){
+        return full;
+    }
 
 
     //setter methods
@@ -108,6 +120,15 @@ public class Peepy {
      */
     public void setColor(Color color){
         this.color = color;
+    }
+
+    //Other methods
+
+    /**
+     * Feeds the peepy and increases the full by a certain amount
+     */
+    public void feed(){
+        full += 5;
     }
 
 
