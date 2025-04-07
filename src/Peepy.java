@@ -10,8 +10,48 @@ public class Peepy {
         name = "No Name";
         age = -1;
         color = Color.WHITE;
-
     }
+
+
+
+
+    public Peepy(String name){
+        this.name = name;
+        age = -1;
+        color = Color.WHITE;
+    }
+
+    public Peepy(String name, int age){
+        this.name = name;
+        this.age = age;
+        color = Color.WHITE;
+    }
+
+    public Peepy(String name, int age, Color color){
+        this.name = name;
+        this.age = age;
+        this.color = color;
+    }
+
+
+
+
+    /**
+     * Sets the name of the peepy.
+     * @param name what to change the name of the peepy to.
+     */
+    public void setName(String name){
+        this.name = name;
+    }
+
+    /**
+     * Sets the name of the peepy.
+     * @param age What to change the age of the peepy to.
+     */
+    public void setAge(int age){
+        this.age = age;
+    }
+
 
 
 
