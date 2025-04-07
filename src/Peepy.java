@@ -6,6 +6,9 @@ public class Peepy {
     private int age;
     private Color color;
 
+    /**
+     * Default cotructor for peepy.
+     */
     public Peepy(){
         name = "No Name";
         age = -1;
@@ -13,20 +16,33 @@ public class Peepy {
     }
 
 
-
-
+    /**
+     * Value contructor for peepy that sets only the name.
+     * @param name What the name of the peepy will be set to.
+     */
     public Peepy(String name){
         this.name = name;
         age = -1;
         color = Color.WHITE;
     }
 
+    /**
+     * Value contructor that contructs name and age of the peepy.
+     * @param name What the name of the peepy will be set to.
+     * @param age What the age of the peepy will be set to.
+     */
     public Peepy(String name, int age){
         this.name = name;
         this.age = age;
         color = Color.WHITE;
     }
 
+    /**
+     * Value constructor that contruscts name, age, and color of the peepy.
+     * @param name What the name of the peepy will be set to.
+     * @param age What the age of the peepy will be set to.
+     * @param color What the colour of the peepy will be set to.
+     */
     public Peepy(String name, int age, Color color){
         this.name = name;
         this.age = age;
