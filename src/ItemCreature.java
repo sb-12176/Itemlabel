@@ -1,10 +1,19 @@
 public class ItemCreature {
 
-    //fields
+//fields
     protected String name;
     protected int age;
     protected String color;
     protected int full;
+
+//constructors
+
+    public ItemCreature(){
+        name = "No Name";
+        age = -1;
+        color = "null";
+        full = 0;
+    }
 
 //methods
 
@@ -90,7 +99,7 @@ public class ItemCreature {
 
     /**
      * Prints the info of the item creature.
-     * Says the type of creature, (papupi, peepy, ouioui, clampy, peeoui)
+     * Says the type of creature, (papupi, peepy, ouioui, peeoui)
      * Says the name of the creature,
      * Says the age of the creature,
      * Says the color of the creature,
@@ -102,6 +111,11 @@ public class ItemCreature {
         System.out.println("Age: " + age);
         System.out.println("Color: " + color);
         System.out.println("Fullness: " + full);
+    }
+
+    @Override
+    public String toString(){
+        return "Hello I am a " + getClass() + " named " + name + ".\nI am " + age + " years old and am color " + color + ".";
     }
 
 }
