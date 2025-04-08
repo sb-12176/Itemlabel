@@ -139,11 +139,12 @@ public class Peepy {
      */
     public void feed(){
         full += 5;
-        if (rand.nextBoolean()){
+        System.out.println("Fed " + name + ".");
+        /*if (rand.nextBoolean()){
             System.out.println(name + " says: yummy this is a good food.\nNow I am " + full + "% full.");
         } else {
             System.out.println(name + " says: ok.......this is an ok food.\nNow I am " + full + "% full.");
-        }
+        }*/
     }
 
     /**
@@ -153,18 +154,21 @@ public class Peepy {
      */
     public void feed(Food food){
         full += food.getFeedValue();
-        if (rand.nextBoolean()){
+        System.out.println("Fed " + name + " a " + food);
+        /*if (rand.nextBoolean()){
             System.out.println(name + " says: yummy this is a good " + food.getType() + " food.\nNow I am " + full + "% full.");
         } else {
             System.out.println(name + " says: ok.......this is an ok " + food.getType() + " food.\nNow I am " + full + "% full.");
         }
+        */
     }
 
 
 
     @Override
     public String toString(){
-        return (name + " says: Hello I am peepy named " + name + ". \nI am " + age + " years old. \nI am color " + color);
+        return "This is peepy named " + name + ". he is " + age + " year old and color " + color;
+        //return (name + " says: Hello I am peepy named " + name + ". \nI am " + age + " years old. \nI am color " + color);
     }
 
 }
