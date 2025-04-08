@@ -7,7 +7,7 @@ public class Food {
 //Constructors
 
     /**
-     * Default contructor for Food.
+     * Default constructor for Food.
      */
     public Food(){
         type = "Null Type";
@@ -15,7 +15,7 @@ public class Food {
     }
 
     /**
-     * Value contructor for Food, Initicalized type.
+     * Value constructor for Food, Initializes type.
      * @param type Sets the type of the food.
      */
     public Food(String type){
@@ -24,7 +24,7 @@ public class Food {
     }
 
     /**
-     * Value contructor for Food. Inizia;izes type and feedValue
+     * Value constructor for Food. Initializes type and feedValue
      * @param type Sets the type of the food.
      * @param feedValue Sets the full value of the food.
      */

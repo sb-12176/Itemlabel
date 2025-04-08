@@ -94,7 +94,7 @@ public class ItemCreature {
      */
     public void feed(Food food){
         full += food.getFeedValue();
-        System.out.println("Fed " + name + " a " + food);
+        System.out.println("Fed " + name + " a " + food.getType());
     }
 
     /**
