@@ -9,7 +9,7 @@ public class OuiOui extends Peepy{
     public OuiOui(){
         name = "No Name";
         age = -1;
-        color = Color.WHITE;
+        color = "null";
     }
 
     /**
@@ -19,7 +19,7 @@ public class OuiOui extends Peepy{
     public OuiOui(String name){
         this.name = name;
         age = -1;
-        color = Color.WHITE;
+        color = "null";
     }
 
     /**
@@ -30,7 +30,7 @@ public class OuiOui extends Peepy{
     public OuiOui(String name, int age){
         this.name = name;
         this.age = age;
-        color = Color.WHITE;
+        color = "null";
     }
 
     /**
@@ -39,9 +39,20 @@ public class OuiOui extends Peepy{
      * @param age What to set the age of tje ouioui to.
      * @param color What to set the color of the ouioui to.
      */
-    public OuiOui(String name, int age, Color color){
+    public OuiOui(String name, int age, String color){
         this.name = name;
         this.age = age;
         this.color = color;
     }
+
+//methods
+    //other methods
+    public void grow(){
+        //not finished
+        new Peepy(name, age+1, color);
+    }
+
+
+
+
 }

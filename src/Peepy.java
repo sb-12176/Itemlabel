@@ -5,7 +5,7 @@ public class Peepy {
 
     protected String name;
     protected int age;
-    protected Color color;
+    protected String color;
 
     private int full;
     private final int FULLFULL = 100;
@@ -20,7 +20,7 @@ public class Peepy {
     public Peepy(){
         name = "No Name";
         age = -1;
-        color = Color.WHITE;
+        color = "null";
 
         full = 0;
         rand = new Random();
@@ -33,7 +33,7 @@ public class Peepy {
     public Peepy(String name){
         this.name = name;
         age = -1;
-        color = Color.WHITE;
+        color = "null";
 
         full = 0;
         rand = new Random();
@@ -47,7 +47,7 @@ public class Peepy {
     public Peepy(String name, int age){
         this.name = name;
         this.age = age;
-        color = Color.WHITE;
+        color = "null";
 
         full = 0;
         rand = new Random();
@@ -59,7 +59,7 @@ public class Peepy {
      * @param age What the age of the peepy will be set to.
      * @param color What the colour of the peepy will be set to.
      */
-    public Peepy(String name, int age, Color color){
+    public Peepy(String name, int age, String color){
         this.name = name;
         this.age = age;
         this.color = color;
@@ -93,7 +93,7 @@ public class Peepy {
      * Returns the color of the peepy.
      * @return Color color of the peepy.
      */
-    public Color getColor(){
+    public String getColor(){
         return color;
     }
 
@@ -128,7 +128,7 @@ public class Peepy {
      * Sets the color of the peepy.
      * @param color What to change the color of the peepy to.
      */
-    public void setColor(Color color){
+    public void setColor(String color){
         this.color = color;
     }
 
