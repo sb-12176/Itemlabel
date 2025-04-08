@@ -1,4 +1,4 @@
-public class ItemCreature {
+public abstract class ItemCreature {
 
 //fields
     protected String name;
@@ -8,12 +8,24 @@ public class ItemCreature {
 
 //constructors
 
+    /**
+     * Default constructor for item creature.
+     */
     public ItemCreature(){
         name = "No Name";
         age = -1;
         color = "null";
         full = 0;
     }
+
+    public ItemCreature(String name){
+        this.name = name;
+        age = -1;
+        color = "null";
+        full = 0;
+    }
+
+
 
 //methods
 
@@ -106,7 +118,8 @@ public class ItemCreature {
      * Says the fullness of the creature.
      */
     public void info(){
-        System.out.println("Type of creature: " + getClass());
+        String subStr = getClass().toString();
+        System.out.println("Type of creature: " + subStr.substring(6));
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Color: " + color);
