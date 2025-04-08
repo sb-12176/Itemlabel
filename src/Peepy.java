@@ -1,6 +1,3 @@
-import java.awt.*;
-import java.util.Random;
-
 public class Peepy {
 
     protected String name;
@@ -9,8 +6,6 @@ public class Peepy {
 
     private int full;
     private final int FULLFULL = 100;
-
-    private Random rand;
 
 //constructors
 
@@ -23,7 +18,6 @@ public class Peepy {
         color = "null";
 
         full = 0;
-        rand = new Random();
     }
 
     /**
@@ -36,7 +30,6 @@ public class Peepy {
         color = "null";
 
         full = 0;
-        rand = new Random();
     }
 
     /**
@@ -50,7 +43,6 @@ public class Peepy {
         color = "null";
 
         full = 0;
-        rand = new Random();
     }
 
     /**
@@ -65,7 +57,6 @@ public class Peepy {
         this.color = color;
 
         full = 0;
-        rand = new Random();
     }
 
 
@@ -91,7 +82,7 @@ public class Peepy {
 
     /**
      * Returns the color of the peepy.
-     * @return Color color of the peepy.
+     * @return String color of the peepy.
      */
     public String getColor(){
         return color;
