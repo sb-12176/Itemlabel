@@ -163,6 +163,15 @@ public class Peepy {
         */
     }
 
+    /**
+     * Prints the info of the peepy.
+     */
+    public void info(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Color: " + color);
+        System.out.println("Fullness: " + full);
+    }
 
 
     @Override

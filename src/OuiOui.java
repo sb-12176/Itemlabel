@@ -47,9 +47,24 @@ public class OuiOui extends Peepy{
 
 //methods
     //other methods
+
+    /**
+     * Grows this ouioui into a peepy, keeping all the same fields
+     * except the age increases.
+     */
     public void grow(){
         //not finished
         new Peepy(name, age+1, color);
+    }
+
+    /**
+     * Grows this ouioui into a peepy, keeping all the same fields,
+     * except the age increases, and it has a new color.
+     * @param newColor The color that the peepy made from ouioui will be changed to.
+     */
+    public void grow(String newColor){
+        //not finished
+        new Peepy(name, age+1, newColor);
     }
 
 
