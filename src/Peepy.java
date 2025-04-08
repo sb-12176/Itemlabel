@@ -3,9 +3,9 @@ import java.util.Random;
 
 public class Peepy {
 
-    private String name;
-    private int age;
-    private Color color;
+    protected String name;
+    protected int age;
+    protected Color color;
 
     private int full;
     private final int FULLFULL = 100;
