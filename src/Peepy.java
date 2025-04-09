@@ -25,11 +25,7 @@ public class Peepy extends ItemCreature{
      * @param age What the age of the peepy will be set to.
      */
     public Peepy(String name, int age){
-        this.name = name;
-        this.age = age;
-        color = "null";
-
-        full = 0;
+        super(name, age);
     }
 
     /**
@@ -39,11 +35,7 @@ public class Peepy extends ItemCreature{
      * @param color What the colour of the peepy will be set to.
      */
     public Peepy(String name, int age, String color){
-        this.name = name;
-        this.age = age;
-        this.color = color;
-
-        full = 0;
+        super(name, age, color);
     }
 
 

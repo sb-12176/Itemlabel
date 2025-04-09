@@ -9,7 +9,7 @@ public abstract class ItemCreature {
 //constructors
 
     /**
-     * Default constructor for item creature.
+     * Default constructor for item creatures.
      */
     public ItemCreature(){
         name = "No Name";
@@ -18,10 +18,42 @@ public abstract class ItemCreature {
         full = 0;
     }
 
+    /**
+     * Value constructor for item creatures that sets the name.
+     * @param name What the name of the item creature will be set to
+     */
     public ItemCreature(String name){
         this.name = name;
         age = -1;
         color = "null";
+        full = 0;
+    }
+
+    /**
+     * Value constructor for item creatues that sets the name and age.
+     * @param name What the name of the item creature will be set to
+     * @param age What the age of the item creature will be set to.
+     */
+    public ItemCreature(String name, int age){
+        this.name = name;
+        this.age = age;
+        color = "null";
+
+        full = 0;
+    }
+
+    /**
+     * Value constructor for item creatures that sets the name,
+     * age, and color of the item creature.
+     * @param name What the name of the item creature will be set to
+     * @param age What the age of the item creature will be set to
+     * @param color What the color of the item creature will be set to
+     */
+    public ItemCreature(String name, int age, String color){
+        this.name = name;
+        this.age = age;
+        this.color = color;
+
         full = 0;
     }
 

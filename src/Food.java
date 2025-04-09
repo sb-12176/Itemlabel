@@ -2,6 +2,7 @@ public class Food {
 
     private String type;
     private int feedValue;
+    private String color;
 
 
 //Constructors
@@ -10,8 +11,9 @@ public class Food {
      * Default constructor for Food.
      */
     public Food(){
-        type = "Null Type";
+        type = "No Type";
         feedValue = -1;
+        color = "null";
     }
 
     /**
@@ -21,6 +23,7 @@ public class Food {
     public Food(String type){
         this.type = type;
         feedValue = -1;
+        color = "null";
     }
 
     /**
@@ -31,6 +34,20 @@ public class Food {
     public Food(String type, int feedValue){
         this.type = type;
         this.feedValue = feedValue;
+        color = "null";
+    }
+
+    /**
+     * Value constructor for Food. Initializes type, feed value, and
+     * color of the food.
+     * @param type What to set the type of the food to
+     * @param feedValue What to set the feed value of the food to
+     * @param color What tp set the color of the food to
+     */
+    public Food(String type, int feedValue, String color){
+        this.type = type;
+        this.feedValue = feedValue;
+        this.color = color;
     }
 
 //Methods
@@ -53,6 +70,14 @@ public class Food {
         return feedValue;
     }
 
+    /**
+     * Returns the color of the food.
+     * @return String color of the object of food
+     */
+    public String getColor(){
+        return color;
+    }
+
     //setter methods
 
     /**
@@ -71,6 +96,21 @@ public class Food {
         this.feedValue = feedValue;
     }
 
+    /**
+     * Changes the color of the food.
+     * @param color What to change the color of the food to
+     */
+    public void setColor(String color){
+        this.color = color;
+    }
+
+    //Other methods
+
+    public void info(){
+        System.out.println("Type: " + type);
+        System.out.println("Feed Value: " + feedValue);
+        System.out.println("Color: " + color);
+    }
 
 
 

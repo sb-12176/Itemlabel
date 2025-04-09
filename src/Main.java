@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import static java.lang.Thread.sleep;
 
 public class Main {
 
@@ -11,17 +10,18 @@ public class Main {
 
 
     public static void main(String[] args) {
+        /*
         say("Hello welcome to the itemalbel game.");
         say("lets make youe a peepy. first lets choose a name.");
         String firstName = scan.nextLine();
         say("Your peepy will be named " + firstName);
+         */
 
-        Peepy p = new Peepy("poo");
-        Peepy q = new Peepy("Ee");
-        p.info();
+        OuiOui oui = new OuiOui("Lobes", 1000, "brown");
+        oui.info();
 
-        //OuiOui oui = new OuiOui("Lobes", 1000, "brown");
-        //oui.info();
+        OuiOui l = new OuiOui();
+        l.info();
 
 
 

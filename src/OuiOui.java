@@ -1,15 +1,10 @@
-import java.awt.*;
-import java.util.Random;
-
-public class OuiOui extends Peepy{
+public class OuiOui extends ItemCreature{
 
     /**
      * Default constructor for ouioui.
      */
     public OuiOui(){
-        name = "No Name";
-        age = -1;
-        color = "null";
+        super();
     }
 
     /**
@@ -17,10 +12,10 @@ public class OuiOui extends Peepy{
      * @param name What to make the name of this new ouioui object.
      */
     public OuiOui(String name){
-        this.name = name;
-        age = -1;
-        color = "null";
+        super(name);
     }
+
+    private final int FULLFULL = 50;
 
     /**
      * Value constructor for ouioui that sets the name and age
@@ -28,9 +23,7 @@ public class OuiOui extends Peepy{
      * @param age What to set the age of ouioui to.
      */
     public OuiOui(String name, int age){
-        this.name = name;
-        this.age = age;
-        color = "null";
+        super(name, age);
     }
 
     /**
@@ -40,9 +33,7 @@ public class OuiOui extends Peepy{
      * @param color What to set the color of the ouioui to.
      */
     public OuiOui(String name, int age, String color){
-        this.name = name;
-        this.age = age;
-        this.color = color;
+        super(name, age, color);
     }
 
 //methods
