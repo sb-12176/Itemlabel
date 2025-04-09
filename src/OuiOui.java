@@ -45,7 +45,7 @@ public class OuiOui extends ItemCreature{
      */
     public void grow(){
         //not finished
-        new Peepy(name, age+1, color);
+        new Peepy(this);
     }
 
     /**
@@ -55,7 +55,9 @@ public class OuiOui extends ItemCreature{
      */
     public void grow(String newColor){
         //not finished
-        new Peepy(name, age+1, newColor);
+        age+=1;
+        color = newColor;
+        new Peepy(this);
     }
 
 

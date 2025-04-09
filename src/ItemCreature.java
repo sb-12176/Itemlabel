@@ -57,6 +57,17 @@ public abstract class ItemCreature {
         full = 0;
     }
 
+    /**
+     * Copy constructor for item creature.
+     * @param creature Another item creature to copy
+     */
+    public ItemCreature(ItemCreature creature){
+        this.name = creature.name;
+        this.age = creature.age;
+        this.color = creature.color;
+        this.full = creature.full;
+    }
+
 
 
 //methods

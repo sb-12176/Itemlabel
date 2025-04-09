@@ -38,6 +38,10 @@ public class Peepy extends ItemCreature{
         super(name, age, color);
     }
 
+    public Peepy(OuiOui oui){
+        super(oui);
+    }
+
 
 //methods
 
