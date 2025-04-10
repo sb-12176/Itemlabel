@@ -45,4 +45,13 @@ public class Papupi extends ItemCreature{
     public Papupi(Peepy peepy) {
         super(peepy);
     }
+
+//Methods
+
+    //other methods
+
+    public void grow(){
+        System.out.println("This creature does not grow!");
+    }
+
 }

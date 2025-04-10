@@ -23,6 +23,9 @@ public class Main {
         OuiOui l = new OuiOui();
         l.info();
 
+        Papupi pupu = new Papupi(new Peepy(oui));
+        pupu.info();
+
 
 
 
