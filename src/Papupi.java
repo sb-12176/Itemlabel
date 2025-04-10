@@ -49,10 +49,7 @@ public class Papupi extends ItemCreature{
 
 //Methods
 
-    //other methods
+    //Other methods
 
-    public void grow(){
-        System.out.println("This creature does not grow!");
-    }
 
 }

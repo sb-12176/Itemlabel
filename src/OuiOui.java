@@ -36,8 +36,9 @@ public class OuiOui extends ItemCreature{
         super(name, age, color);
     }
 
-//methods
-    //other methods
+//Methods
+
+    //Other methods
 
 
 }

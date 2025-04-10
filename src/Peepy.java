@@ -45,7 +45,6 @@ public class Peepy extends ItemCreature{
 
 //methods
 
-
     //Other methods
 
 
