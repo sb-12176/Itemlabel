@@ -38,6 +38,10 @@ public class Peepy extends ItemCreature{
         super(name, age, color);
     }
 
+    /**
+     * Makes Ouioui grow into a peepy.
+     * @param oui The Ouioui that will grow into a peepy
+     */
     public Peepy(OuiOui oui){
         super(oui);
     }

@@ -183,7 +183,7 @@ public abstract class ItemCreature {
 
     @Override
     public String toString(){
-        return "Hello I am a " + getClass() + " named " + name + ".\nI am " + age + " years old and am color " + color + ".";
+        return "Hello I am a " + subStr.substring(6) + " named " + name + ".\nI am " + age + " years old and am color " + color + ".";
     }
 
 }
