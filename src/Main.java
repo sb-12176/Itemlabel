@@ -23,6 +23,13 @@ public class Main {
         OuiOui l = new OuiOui();
         l.info();
 
+        Papupi pupu = new Papupi("Cheese", 2, "yellow");
+        pupu.info();
+
+        Food mango = new Food("mango", 1);
+        pupu.feed(mango);
+        say(pupu.sayFull());
+
 
 
 

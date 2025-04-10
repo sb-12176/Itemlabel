@@ -5,6 +5,7 @@ public abstract class ItemCreature {
     protected int age;
     protected String color;
     protected int full;
+    protected String subStr = getClass().toString();
 
 //constructors
 
@@ -63,9 +64,10 @@ public abstract class ItemCreature {
      */
     public ItemCreature(ItemCreature creature){
         this.name = creature.name;
-        this.age = creature.age;
+        this.age = creature.age+1;
         this.color = creature.color;
         this.full = creature.full;
+        this.subStr = creature.subStr;
     }
 
 
@@ -152,6 +154,17 @@ public abstract class ItemCreature {
         System.out.println("Fed " + name + " a " + food.getType());
     }
 
+    public String sayFull(){
+        String ret = name + " is " + full + "% full.\n";
+        if (full>=80){
+            return ret + "You probably shouldn't feed " + name +" anymore.";
+        } else if (full < 80 && full >= 20){
+            return ret + "You can feed the " + subStr.substring(6) + " if you want to.";
+        } else {
+            return ret + "He is super ungry you should prpbably feed him..........";
+        }
+    }
+
     /**
      * Prints the info of the item creature.
      * Says the type of creature, (papupi, peepy, ouioui, peeoui)
@@ -161,7 +174,6 @@ public abstract class ItemCreature {
      * Says the fullness of the creature.
      */
     public void info(){
-        String subStr = getClass().toString();
         System.out.println("Type of creature: " + subStr.substring(6));
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
