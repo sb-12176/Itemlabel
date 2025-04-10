@@ -1,5 +1,7 @@
 public class OuiOui extends ItemCreature{
 
+    private final int FULLFULL = 50;
+
     /**
      * Default constructor for ouioui.
      */
@@ -14,8 +16,6 @@ public class OuiOui extends ItemCreature{
     public OuiOui(String name){
         super(name);
     }
-
-    private final int FULLFULL = 50;
 
     /**
      * Value constructor for ouioui that sets the name and age
@@ -38,29 +38,6 @@ public class OuiOui extends ItemCreature{
 
 //methods
     //other methods
-
-    /**
-     * Grows this ouioui into a peepy, keeping all the same fields
-     * except the age increases.
-     */
-    public void grow(){
-        //not finished
-        new Peepy(this);
-    }
-
-    /**
-     * Grows this ouioui into a peepy, keeping all the same fields,
-     * except the age increases, and it has a new color.
-     * @param newColor The color that the peepy made from ouioui will be changed to.
-     */
-    public void grow(String newColor){
-        //not finished
-        age+=1;
-        color = newColor;
-        new Peepy(this);
-    }
-
-
 
 
 }

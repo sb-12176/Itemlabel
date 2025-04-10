@@ -48,16 +48,5 @@ public class Peepy extends ItemCreature{
 
     //Other methods
 
-    public void grow(){
-        age+=1;
-        new Papupi(this);
-    }
-
-    public void grow(String newColor){
-        //not finished
-        age+=1;
-        color = newColor;
-        new Papupi(this);
-    }
 
 }

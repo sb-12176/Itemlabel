@@ -1,6 +1,7 @@
 public class Papupi extends ItemCreature{
 
     private final int PICK_UP_LIMIT = 1;
+    private final int FULLFULL = 200;
 
 //Constructors
 
