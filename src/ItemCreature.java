@@ -69,7 +69,9 @@ public abstract class ItemCreature {
         this.color = creature.color;
         this.full = creature.full;
         this.subStr = creature.subStr;
-        this.bag = creature.bag;
+        if (this.bag!= null){
+            this.bag = creature.bag;
+        }
     }
 
 
@@ -168,6 +170,11 @@ public abstract class ItemCreature {
      * @param food The food that you are feeding the item creature.
      */
     public void feed(Food food){
+
+        if (bag.contains(food)){
+            bag.remove(food);
+        }
+
         full += food.getFeedValue();
         System.out.println("Fed " + name + " a " + food.getType());
     }
@@ -197,6 +204,10 @@ public abstract class ItemCreature {
         System.out.println("Age: " + age);
         System.out.println("Color: " + color);
         System.out.println("Fullness: " + full);
+    }
+
+    public void putFoodInBag(Food food){
+        bag.addFood(food);
     }
 
     @Override

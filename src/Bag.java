@@ -10,8 +10,17 @@ public class Bag {
         return "idk";
     }
 
+    public void addFood(Food food){
+        space.add(food);
+    }
 
+    public boolean contains(Food food){
+        return space.contains(food);
+    }
 
+    public void remove(Food food){
+        space.remove(food);
+    }
 
 
 
