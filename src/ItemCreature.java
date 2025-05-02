@@ -6,6 +6,7 @@ public abstract class ItemCreature {
     protected String color;
     protected int full;
     protected String subStr = getClass().toString();
+    protected Bag bag;
 
 //constructors
 
@@ -68,6 +69,7 @@ public abstract class ItemCreature {
         this.color = creature.color;
         this.full = creature.full;
         this.subStr = creature.subStr;
+        this.bag = creature.bag;
     }
 
 
@@ -108,6 +110,18 @@ public abstract class ItemCreature {
         return full;
     }
 
+    /**
+     * Returns the bag that this itemcreature holds
+     * (if it holds any)
+     * @return Bag bag
+     */
+    public Bag getBag(){
+        if (bag!= null){
+            return bag;
+        }
+        return null;
+    }
+
     //setter methods
 
     /**
@@ -132,6 +146,10 @@ public abstract class ItemCreature {
      */
     public void setColor(String color){
         this.color = color;
+    }
+
+    public void setBag(Bag bag){
+        this.bag = bag;
     }
 
     //Other methods
