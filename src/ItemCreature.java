@@ -120,8 +120,12 @@ public abstract class ItemCreature {
     public Bag getBag(){
         if (bag!= null){
             return bag;
+        } else if (bag == null){
+            System.out.println("This " + subStr.substring(6) + " does not have a bag.");
+            this.bag = new Bag();
+            System.out.println("Created a bag for the " + subStr.substring(6));
         }
-        return null;
+        return bag;
     }
 
     //setter methods
