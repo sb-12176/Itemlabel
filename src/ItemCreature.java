@@ -6,6 +6,7 @@ public abstract class ItemCreature {
     protected String color;
     protected int full;
     protected String subStr = getClass().toString();
+    protected Bag bag;
 
 //constructors
 
@@ -68,6 +69,9 @@ public abstract class ItemCreature {
         this.color = creature.color;
         this.full = creature.full;
         this.subStr = creature.subStr;
+        if (this.bag!= null){
+            this.bag = creature.bag;
+        }
     }
 
 
@@ -108,6 +112,22 @@ public abstract class ItemCreature {
         return full;
     }
 
+    /**
+     * Returns the bag that this itemcreature holds
+     * (if it holds any)
+     * @return Bag bag
+     */
+    public Bag getBag(){
+        if (bag!= null){
+            return bag;
+        } else if (bag == null){
+            System.out.println("This " + subStr.substring(6) + " does not have a bag.");
+            this.bag = new Bag();
+            System.out.println("Created a bag for the " + subStr.substring(6));
+        }
+        return bag;
+    }
+
     //setter methods
 
     /**
@@ -134,6 +154,10 @@ public abstract class ItemCreature {
         this.color = color;
     }
 
+    public void setBag(Bag bag){
+        this.bag = bag;
+    }
+
     //Other methods
 
     /**
@@ -150,6 +174,13 @@ public abstract class ItemCreature {
      * @param food The food that you are feeding the item creature.
      */
     public void feed(Food food){
+
+        if (bag!= null){
+            if (bag.contains(food)){
+                bag.remove(food);
+            }
+        }
+
         full += food.getFeedValue();
         System.out.println("Fed " + name + " a " + food.getType());
     }
@@ -179,6 +210,10 @@ public abstract class ItemCreature {
         System.out.println("Age: " + age);
         System.out.println("Color: " + color);
         System.out.println("Fullness: " + full);
+    }
+
+    public void putFoodInBag(Food food){
+        bag.addFood(food);
     }
 
     @Override
