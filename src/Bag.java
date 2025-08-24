@@ -49,7 +49,7 @@ public class Bag {
     }
 
     public boolean contains(Food food){
-        return space.contains(food);
+            return space.contains(food);
     }
 
     public void remove(Food food){

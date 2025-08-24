@@ -175,8 +175,10 @@ public abstract class ItemCreature {
      */
     public void feed(Food food){
 
-        if (bag.contains(food)){
-            bag.remove(food);
+        if (bag!= null){
+            if (bag.contains(food)){
+                bag.remove(food);
+            }
         }
 
         full += food.getFeedValue();
